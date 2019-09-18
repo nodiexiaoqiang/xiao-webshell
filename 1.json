@@ -1,0 +1,39 @@
+{
+  "port": 443,
+  "listen": "0.0.0.0",
+  "protocol": "vmess",
+  "settings": {
+    "clients": [
+      {
+        "id": "c25d48b8-a66f-4a4c-b33b-6716d2c41b15",
+        "alterId": 21
+      }
+    ]
+  },
+  "streamSettings": {
+    "network": "ws",
+    "security": "tls",
+    "tlsSettings": {
+      "serverName": "s.zthero.cn",
+      "allowInsecure": true,
+      "certificates": [
+        {
+          "certificateFile": "/var/v2ray/1.car",
+          "keyFile": "/var/v2ray/1.pass"
+        }
+      ]
+    },
+    "wsSettings": {
+      "path": "/a/index",
+      "headers": {}
+    }
+  },
+  "tag": "",
+  "sniffing": {
+    "enabled": true,
+    "destOverride": [
+      "http",
+      "tls"
+    ]
+  }
+}
